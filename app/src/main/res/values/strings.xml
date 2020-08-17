@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">JSierra_programationNativeMobile_TP1</string>
+    <string name="Temp">Température</string>
+    <string name="TempConv">Température à convertir</string>
+    <string name="C">Celcius</string>
+    <string name="F">Fahreinheit</string>
+    <string name="K">Kelvin</string>
+    <string name="Result">Résultat</string>
+    <string name="Dist">Distance</string>
+    <string name="DistConv">Distance à convertir</string>
+    <string name="cm">cm</string>
+    <string name="m">m</string>
+    <string name="km">km</string>
+    <string name="pouce">pouce</string>
+    <string name="pied">pied</string>
+    <string name="mile">mile</string>
+    <string name="Resultat">Resultat</string>
+    <string name="Masse">Masse</string>
+    <string name="SousTitre">SousTitre</string>
+    <string name="MasseConv">Masse à convertir</string>
+    <string name="kg">kg</string>
+    <string name="lb">lb</string>
+
+
+</resources>

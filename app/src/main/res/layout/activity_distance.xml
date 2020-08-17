@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/android8"
+    tools:context=".Distance">
+
+    <TextView
+        android:id="@+id/lblTitreDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/Dist"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblSousTitreDi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/DistConv"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTitreDistance" />
+
+    <EditText
+        android:id="@+id/txtDist"
+        android:layout_width="205dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="24dp"
+        android:background="@color/colorPrimaryDark"
+        android:ems="10"
+        android:inputType="numberSigned|numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radioGroupDepartDist"
+        app:layout_constraintTop_toBottomOf="@+id/lblSousTitreDi" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupDepartDist"
+        android:layout_width="128dp"
+        android:layout_height="193dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblSousTitreDi">
+
+        <RadioButton
+            android:id="@+id/rbDecentimetre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/cm"
+            android:textColor="@android:color/background_light" />
+
+        <RadioButton
+            android:id="@+id/rbDemetre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/m"
+            android:textColor="@android:color/background_light" />
+
+        <RadioButton
+            android:id="@+id/rbDekilometre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/km"
+            android:textColor="@android:color/background_light" />
+
+        <RadioButton
+            android:id="@+id/rbDepouce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pouce"
+            android:textColor="@android:color/background_light" />
+
+        <RadioButton
+            android:id="@+id/rbDepied"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pied"
+            android:textColor="@android:color/background_light" />
+
+        <RadioButton
+            android:id="@+id/rbDemile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mile"
+            android:textColor="@android:color/background_light" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/Resultat"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDist" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupFinDist"
+        android:layout_width="128dp"
+        android:layout_height="193dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15">
+
+        <RadioButton
+            android:id="@+id/rbFincentimetre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cm"
+            android:textColor="@android:color/background_light" />
+
+        <RadioButton
+            android:id="@+id/rbFinmetre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/m"
+            android:textColor="@android:color/background_light" />
+
+        <RadioButton
+            android:id="@+id/rbFinkilometre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/km"
+            android:textColor="@android:color/background_light" />
+
+        <RadioButton
+            android:id="@+id/rbFinpouce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pouce"
+            android:textColor="@android:color/background_light" />
+
+        <RadioButton
+            android:id="@+id/rbFinpied"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pied"
+            android:textColor="@android:color/background_light" />
+
+        <RadioButton
+            android:id="@+id/rbFinmile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mile"
+            android:textColor="@android:color/background_light" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtResultatDist"
+        android:layout_width="160dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="24dp"
+        android:background="@color/colorPrimaryDark"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:text="-"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radioGroupFinDist"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+</androidx.constraintlayout.widget.ConstraintLayout>

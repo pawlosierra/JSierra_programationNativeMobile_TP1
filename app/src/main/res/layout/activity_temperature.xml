@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/android12"
+    tools:context=".Temperature">
+
+    <TextView
+        android:id="@+id/IbITitre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/Temp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/IbISousTitre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/TempConv"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IbITitre" />
+
+    <EditText
+        android:id="@+id/txtTemp"
+        android:layout_width="220dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:background="@color/colorPrimary"
+        android:ems="10"
+        android:inputType="numberSigned|numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IbISousTitre" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupDepart"
+        android:layout_width="130dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTemp">
+
+        <RadioButton
+            android:id="@+id/rbDeCelcius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/C"
+            android:textColor="@android:color/background_light" />
+
+        <RadioButton
+            android:id="@+id/rbDeFahreinheit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/F"
+            android:textColor="@android:color/background_light" />
+
+        <RadioButton
+            android:id="@+id/rbDeKelvin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/K"
+            android:textColor="@android:color/background_light" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/Result"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupDepart" />
+
+    <TextView
+        android:id="@+id/txtResultatTemp"
+        android:layout_width="175dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:text="-"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <RadioGroup
+        android:id="@+id/RadioGroupFin"
+        android:layout_width="121dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtResultatTemp">
+
+        <RadioButton
+            android:id="@+id/rbFinCelcius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/C"
+            android:textColor="@android:color/background_light" />
+
+        <RadioButton
+            android:id="@+id/rbFinFahrenheit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/F"
+            android:textColor="@android:color/background_light" />
+
+        <RadioButton
+            android:id="@+id/rbFinKelvin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/K"
+            android:textColor="@android:color/background_light" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
